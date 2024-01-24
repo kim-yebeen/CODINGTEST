@@ -1,0 +1,21 @@
+package basic;
+
+import java.util.Scanner;
+
+public class basic_2443 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		sc.close();
+			
+		
+		for(int i=N; i>=1; i--) {
+			System.out.println(" ".repeat(N-i)+
+									"*".repeat(i)+"*"+"*".repeat(i)
+									+" ".repeat(N-i));
+		}
+		
+	}
+
+}
