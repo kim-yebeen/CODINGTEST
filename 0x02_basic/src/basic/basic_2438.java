@@ -13,8 +13,9 @@ public class basic_2438 {
 		for(int i=1; i<=N; i++) {
 			//자바에서는 문자 곱하기가 *로 불가능하고 .repeat으로 해야함
 			System.out.println("*".repeat(i));
-			//줄바꿈 안해도 되네..
-			//System.out.println("\n");
+			//줄바꿈 안해도 된다. ln은print면 해야함
+			//System.out.print("\n");
+			//System.out.println(); : 줄바꿈해줌
 		}
 		
 	}

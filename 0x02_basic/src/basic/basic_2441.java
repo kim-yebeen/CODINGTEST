@@ -13,8 +13,9 @@ public class basic_2441 {
 		for(int i=N; i>=1; i--) {
 			//자바에서는 문자 곱하기가 *로 불가능하고 .repeat으로 해야함
 			System.out.println(" ".repeat(N-i)+"*".repeat(i));
-			
 		}
+		
+		//
 		
 	}
 
