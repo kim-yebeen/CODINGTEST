@@ -12,6 +12,8 @@ public class bronze2_2577 {
 		long B = sc.nextLong();
 		long C = sc.nextLong();
 		
+		sc.close();
+		
 		String result = Long.toString(A*B*C);
 		
 		int [] count = new int[10];
