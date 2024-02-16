@@ -28,6 +28,8 @@ public class bronze2_133000 {
 		
 		for(int i = 0; i < 2; i++) {
             for (int j = 1; j <= 6; j++) {
+            	//Student[i][j]double로 해서 소수점나눗셈?가능하게
+            	//최대인원수로 나눈 몫을 반올림해서 count해줌
                 count += Math.ceil((double) Student[i][j] / K);
             }
         }

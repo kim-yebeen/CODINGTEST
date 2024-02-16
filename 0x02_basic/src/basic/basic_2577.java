@@ -18,12 +18,14 @@ public class basic_2577 {
 		
 		//문자에 i에 해당하는 숫자 있으면 count올려줌
 		//for문을 통해 문자열이 존재하는지 확인
-		for(int i=0;i<10;i++) {
+		for(int i=0;i<10;i++) 
+		{
 			for(int j=0;j<rs.length(); j++)
-			{if(rs.indexOf(j)>-1) 
-			{
-				count++;
-			}
+			{	//rs문자열 안에 j가 존재하면
+				if(rs.indexOf(j)>-1) 
+				{
+					count++;
+				}
 			}
 			System.out.println(count);
 		}

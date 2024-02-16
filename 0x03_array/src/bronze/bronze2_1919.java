@@ -24,21 +24,23 @@ public static void main(String[] args) {
 	int count =0;
 	int i=0;
     int j=0;
-	
+	//문자열이 같을 경우 count++
+    //aabc abc
     while(i<Asort.length && j<Bsort.length){
-        if(Asort[i]==Bsort[j]){
+        if(Asort[i]==Bsort[j]){//a-a
             i++;
             j++;
             count++;
-        }else if(Asort[i]<Bsort[j]){
-            i++;
+        }else if(Asort[i]<Bsort[j]){//a-b
+            i++;//b-b
         }else{
             j++;
         }
     }
-	
+	//asort길이 +bsort길이 - count(같은문자열)*2
     System.out.println(Asort.length+Bsort.length-count*2);
-	}
+	
+}
 	
 
 }

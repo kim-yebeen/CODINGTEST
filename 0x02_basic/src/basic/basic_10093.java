@@ -17,24 +17,24 @@ public class basic_10093 {
 
 		//둘째줄에는 두 수 사이에 있는 수를 오름차순으로 출력한다.
 	
-		//A가 B보다 작을 경우
-		if(B>A){
-			System.out.println(B-A-1);
-			while((B-A)>1) {
-				A++;
-				System.out.print(A + " ");
-			}
-		}//B가 A보다 작을 경우
-		else if(A<B) {
-			System.out.println(A-B-1);
-			while((A-B)>1) {
-				B++;
-				System.out.print(B + " ");
-				}
-		}//A=B가 같은 경우
-		else{
+		//A=B가 같은 경우
+		if(A==B){
 			System.out.println("0");
-		}
 		
-	}
+		}//B가 A보다 작을 경우
+		else if(A>B) {
+			System.out.println(A-B-1);
+
+			for(long i=B+1;i<A;i++) {
+				System.out.print(i+" ");
+			}
+		}
+		else {
+			System.out.println(B-A-1);
+			
+			for(long i=A+1;i<B;i++) {
+				System.out.print(i+" ");
+		}
+		}
+		}
 }
